@@ -32,3 +32,4 @@ console.log(myObj.banana);
 //commit 8
 
 //commit 10
+//commit 6 complete.
