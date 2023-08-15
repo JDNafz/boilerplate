@@ -31,5 +31,3 @@ console.log(myObj.banana);
 
 //commit 8
 
-//commit 9
-
