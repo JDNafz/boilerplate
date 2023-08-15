@@ -27,9 +27,7 @@ console.log(myObj.banana);
 //Accept Current: what was MOST RECENTLY put out.
 //Accept incoming change: USE OLD COMMIT MATERIAL
 
-//commit 7 DONE.
+function thisDo() {
+  console.log("DOIN THINGSSSSSS")
+}
 
-//commit 8
-
-//commit 10
-//commit 6 complete.
