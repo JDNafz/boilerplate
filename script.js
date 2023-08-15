@@ -24,10 +24,7 @@ console.log(myObj.banana);
 // above this line is the old content.
 
 
-//commit 2
-
-
 //Accept Current: what was MOST RECENTLY put out.
 //Accept incoming change: USE OLD COMMIT MATERIAL
 
-//commit 6 complete.
+//commit 7 DONE.
