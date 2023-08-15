@@ -23,8 +23,3 @@ console.log(myObj.banana);
 // ******************************
 // above this line is the old content.
 
-//commit 1
-
-//commit 2
-
-//commit 3
