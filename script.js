@@ -6,28 +6,29 @@ function transposeMatrix(matrix) {
   // Write your code here.
   let output;
   output = matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]));
-  console.log(output);
+  // console.log(output);
   return output;
 }
-
-
 transposeMatrix(matrix);
 
-const myVar = "Cheese";
-console.log(myVar);
-
-const myObj = {};
-myObj.banana = "best food ever"
-console.log(myObj.banana);
-
-// ******************************
-// above this line is the old content.
 
 
-//Accept Current: what was MOST RECENTLY put out.
-//Accept incoming change: USE OLD COMMIT MATERIAL
+let myInt = 6;
+let myString = '6';
+let combo = myInt + Number(myString);
+console.log(typeof combo);
 
-function thisDo() {
-  console.log("DOIN THINGSSSSSS")
-}
 
+// sum of numbers 1 to n
+function countingFromOneToN(num){
+  let result = 0;
+  for (let i = 1; i <= num; i ++){
+    result += i; 
+    // console.log(result);
+  }
+  return result
+
+}// end countingFromOneToN
+
+let answer = countingFromOneToN(5);
+// console.log(answer);
