@@ -32,3 +32,4 @@ function countingFromOneToN(num){
 
 let answer = countingFromOneToN(5);
 // console.log(answer);
+let response = prompt("enter an integer number");
