@@ -48,4 +48,4 @@ function sumDigits(n) {
   // console.log("conclusion sum is:",sum);
   return sum;
 }
-// console.log(sumDigits(15));
+console.log(sumDigits(15));
