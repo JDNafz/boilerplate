@@ -24,13 +24,31 @@ console.log(myObj.banana);
 // above this line is the old content.
 
 
-//commit 2
+$(document).ready(onReady);
 
+function onReady() {
 
-//Accept Current: what was MOST RECENTLY put out.
-//Accept incoming change: USE OLD COMMIT MATERIAL
+  $('h1').addClass('pink-text');
 
-//commit 6 complete.
+  $('#potatoButton').on('click', makePotato);
+  $('#unicornButton').on('click', makeUnicorn);
+  $('.potatoSpan').on('click', removePotato);
 
-BEBE BOO BO O banas;dlkfja; lskjdf
-porblems
+  function makePotato() {
+    $('#potato_div').append("<span class='potatoSpan'>'🥔'</span>");
+  }
+
+  function makeUnicorn() {
+    $('#unicorn_div').append("🦄");
+  }
+  function  removePotato(){
+    $('#potato_div').remove();
+  }
+
+  
+  // $('.bananas').remove()
+
+  // $('p').text('who took the bananas?')
+
+  // $('#bear').addClass('huge-font')
+}
