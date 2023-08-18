@@ -1,20 +1,40 @@
 
 
 function stringChange(string) {
+    //GOAL:
+    // "Hello World!" -> "ello world"
+    // "Ha!" -> "a"
+    // "no" -> "no"
     let startPosition = 0;
     let endPosition = string.length;
-    // if length <= 2 
-        //DONT DO IT
-    //else
-    // for
+    if (string.length <= 2){
+        // console.log("return:", string);
+        return string;
+    }
     endPosition -= 1;
     startPosition +=1
     let newString = string.slice(startPosition,endPosition);
-    console.log(newString);
-}
+    // console.log(newString);
+    return newString
 
-stringChange("Hello World!");
-// "Hello World!" -> "ello world"
-// "Ha!" -> "a"
-// "no" -> "no"
+    //Move these down to test it
+    console.log(stringChange("Hello World!"));
+    console.log(stringChange("Ha"));
+} //end stringChange function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
