@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="jquery.js"></script>
-    <script src="practice_script.js"></script>
-
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <script src="jquery.js"></script> -->
+    <script src="script.js"></script>
+    <h1>Salary Calculator</h1>
 </head>
 <body>
-    <h1>HTML DOC PRACTICE
-    </h1>
+    <section>
+        <input id="inFirstName" type="text" placeholder="First Name">
+        <input id="inLastName" type="text" placeholder="Last Name">
+        <input id="inUserID" type="number" placeholder="ID">
+        <input id="inTitle" type="text" placeholder="Title">
+        <input id="inSalary" type="number" placeholder="Salary">
+        
+        <input id="submit-btn" type="submit" value="Submit">
+    </section>
+    <h2> Employees</h2>
+    <table id="resultsTable">
+        <tr id="firstRow">
+          <th id="firstNameCol" >First Name</th>
+          <th id="lastNameCol"  >Last Name</th>
+          <th id="userIDCol"    >ID</th>
+          <th id="titleCol"     >Title</th>
+          <th id="salaryCol"    >Salary</th>
+          <th id="delete-btnCol"></th>
+        </tr>
+    </table>
+    <span id="totalAmount" class="total">$20,000</span>
+    <span id="totalText" class="total">Total Monthly:</span>
+
 </body>
 </html>
 
