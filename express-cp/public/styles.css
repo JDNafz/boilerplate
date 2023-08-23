@@ -1,0 +1,144 @@
+/* colors */
+body {
+  /* display: block; */
+  /* height: 100vh; */
+  background: hsl(232, 22%, 90%);
+  color: rgba(95, 17, 232, 1);
+}
+
+h1 {
+  color:rgba(95, 17, 232, 1);
+  background-color:rgb(204, 179, 248);
+}
+.deleteTarget, .tempDelete {
+  color:rgba(95, 17, 232, 1);
+  border-color:rgba(255, 128, 202, 0.493);
+}
+input{
+  color:rgba(95, 17, 232, 1);
+  border-color:rgba(95, 17, 232, 1);
+}
+input::placeholder {
+  color:rgb(204, 179, 248);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ECE;
+}
+.red-fill {
+  color: black;
+  background-color: rgba(255, 128, 202, 0.493);
+  padding: 2px 2px 2px 4px
+} 
+.error-highlight{
+  outline: none;
+  border-color: 2px #bf3826;
+  box-shadow: 0 0 10px red;
+} 
+
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section{
+  vertical-align: text-top;
+  margin: 0 10px;
+  padding: 0 3% 2% 2% ;
+}
+#tableSection { /* top, right, bottom, left */
+  flex-grow:5;
+  align-self: center;
+}
+#inputSection {
+  flex-grow:1;
+  align-self: center;
+}
+
+#inputs{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  margin: 0 25% ;
+}
+
+input {
+  display: block;
+  margin: 3px;
+  background: hsl(232, 22%, 90%);
+  border-radius: 2px;
+  border-style:solid;
+}
+
+
+#submit-btn {
+  margin: 0 5% 0 80%;
+}
+
+h1 {
+  display: block;
+  margin: 0 0 5% 0 ;
+  padding: 2%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  
+  font-size: large;
+  margin: 0 0 0 20%;
+  padding: 0 0 5px 5px ;
+}
+#input h2 {
+  margin: 0 0 0 30%;
+}
+
+table {
+  width: 90%;
+  margin: 0;
+  text-align: left;
+  /* border:2px solid #bf3826 */
+
+  padding: 1% 0 0 0 ;
+}
+
+
+th, td {
+
+  text-align: left;
+  white-space: nowrap;
+  /* border: solid black; */
+  /* top, right, bottom, left */
+  padding:  .5em;
+}
+
+#tableFooter{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#totalAmount {
+  order: 1;
+  display:flex;
+  margin: 0% 0% 0% 0% ;
+  vertical-align: bottom;
+  margin: 0 8% 0 0;
+  padding:0;
+}
+#adjuster {
+  order: 4;
+  align-self: bottom;
+  flex-grow:2;
+
+  padding:0 0 0 0 ;
+  }
+#custom-budget {
+    margin:0 2% 0 0;
+    flex-grow: 1;
+    width: 13%;
+    order: 3;
+  }
+#submitBudget {
+    order:2;
+    margin: 0 10% 0 0;
+  }
