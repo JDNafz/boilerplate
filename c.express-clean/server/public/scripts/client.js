@@ -24,7 +24,7 @@ function postInput(postObj){
 
     $.ajax({   
     type: 'POST',  
-    url: '/guess',
+    url: '/route',
     data: postObj     //send the item
   }).then( (res) => { // if good response ie 200,201:
     console.log("IT WORK THEY 201")
