@@ -1,7 +1,7 @@
 $(document).ready(onReady);
 
 function onReady() {
-  console.log("jquery is loaded!")
+  console.log("JQ running OnReady")
   $('#submit-btn').on('click', submitData); 
 
 } //end handleReady
