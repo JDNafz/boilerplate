@@ -1,20 +1,79 @@
 const express = require('express');
+// const bodyParser = require('body-parser')
+const app = express();
+const PORT = 5000;
 
-const app = express(); //how to refer to calling the express() function
-const PORT = 5000; // Where we're chatting
-
+// This must be added before GET & POST routes.
+// app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('server/public')); //static default to load 'public'
+// Serve up static files (HTML, CSS, Client JS)
+app.use(express.static('server/public'));
 
-app.get('/artist', (req, res) => {
-    res.send(artistListArray);
+
+//make this into a route (module)?
+
+let randomNumber = -1;
+getRandomNumber();
+// console.log("randomNumber is: ",randomNumber) 
+
+function getRandomNumber(){
+  randomNumber = Math.floor(Math.random() * 25)+1 ;
+}
+
+
+let storingGuesses = [];
+
+//POST Routes go here
+app.post('/guess', (req,res) => {
+  let allGuesses = req.body;
+  console.log(allGuesses);   // [ { angelica: '574' }, { jd: '222' }, { najma: '111' } ]
+  let angelicasGuess = allGuesses[0];
+  console.log("angelica's guess: ",angelicasGuess);
+  res.sendStatus(400);
+  
+
+
+  storingGuesses.push(allGuesses);
+
+  // compareGuess(allGuesses);
+
+  res.sendStatus(201); // send back "Submitted"
 });
 
-app.post('/place', (req,res) => {
-    res.sendStatus(201); // send back "Submitted"
+function compareGuess(allGuesses){
+  //compare content
+  // console.log(allGuesses); // { angelica: '6', jd: '33', najma: '112' }
+  for (let guess of allGuesses){
+    console.log("an item in the loop", guess)
+
+    if (guess === randomNumber){
+      // correctGuessesArray.push(person who guessed)
+
+
+    }
+  }
+
+} // end compareGuess();
+
+
+
+
+
+
+
+
+// GET  Routes go here
+app.get('/guess', (req, res) => {
+  res.send(inventory);
 });
+
+
+
+
+
 
 
 app.listen(PORT, () => {
-    console.log('BEEP BOOP SERVER RUNNING...', PORT)
-});
+  console.log ('Beep Boop I\'m on', PORT)
+})
+ 
