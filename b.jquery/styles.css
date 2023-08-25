@@ -1,13 +1,4 @@
-div {
-  height: 60px;
-  background-color: red;
+body {
+  background-color: rgb(227, 227, 178);
 }
 
-:root {
-  --bg: #f4f9fc;
-  --line: #6000cb;
-  --fill: #aadcec;
-  --text: #0f1b61;
-  --subtext: #73bbc5;
-  --duo: #105d67
-}
