@@ -19,7 +19,7 @@ function submitData(){
 
 
 
-//CLIENT POST 
+//CLIENT POST  
 function postInput(postObj){
 
     $.ajax({   
