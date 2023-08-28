@@ -7,6 +7,7 @@ Install Express:
 
 # ```npm install express --save ```
 
+npm i
 - install the express modules, save it in package.json as a dependency
 
 # ```npm install```

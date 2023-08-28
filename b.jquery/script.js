@@ -2,10 +2,10 @@ console.log("JQ/JS connected");
 
 let myArray = [];
 let variable1 = 16;
-let variable2 = "cheese from the store down the street";
+let variable2 = 24
 
 myArray[0] = variable1;
-myArray.push("tomato");
+myArray.push(5);
 myArray.push(variable2);
 
 function addition(number1,number2){
