@@ -79,12 +79,12 @@ You will need a create a new heroku project for every app you want to deploy.
 
 
 1. `cd` into your project directory, if needed
-2. Run `heroku create`
-  - INSTRUCTORS NEED TO USE: `heroku create --team fse-instructors`
+2. Run:
+```
+heroku create
+```
 3. Login in if prompted -- it might ask to open a browser
 4. Type `git remote -v` to ensure it added successfully. You should see a remote called `heroku`
-
-Heroku works by creating a new git _remote_. Just like we can push our repo to Github (`origin`), we will now be able to push our repo to heroku:
 
 ```
 git push heroku main
