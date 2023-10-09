@@ -1,3 +1,30 @@
+
+
+
+
+
+
+
+
+// THIS IS THE JQUERY FILE, GO WRITE YOUR OWN SCRIPTS IN SCRIPT.JS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
  * jQuery JavaScript Library v3.7.0
  * https://jquery.com/
@@ -8,6 +35,8 @@
  *
  * Date: 2023-05-11T18:29Z
  */
+
+
 ( function( global, factory ) {
 
 	"use strict";

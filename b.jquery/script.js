@@ -1,16 +1,12 @@
 console.log("JQ/JS connected");
 
-let myArray = [];
-let variable1 = 16;
-let variable2 = 24
 
-myArray[0] = variable1;
-myArray.push(5);
-myArray.push(variable2);
 
-function addition(number1,number2){
-    let result = number1 * number2
-    return result
-}
+// Run this file in node (straight in the terminal)?
+//            node a.html,css,js/script.js
 
-// console.log(   addition(5,variable1));
+// Run this file in browser?
+// MAC:       open a.html,css,js/script.js
+// Windows:   start a.html,css,js/script.js
+
+// right click inspect, go to the "Console tab to view the console.log statement"
