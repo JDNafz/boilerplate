@@ -56,7 +56,7 @@ git remote -v // to check it worked
 grab the content of your .env file and put it in heroku.
 
 
-### Port
+### Port = process.env.PORT || 5000
 
 On Heroku, our apps will run on a different port every time we deploy. Heroku will set a `PORT` environment variable to tell us which port we need to listen on.
 
