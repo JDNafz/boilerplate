@@ -3,13 +3,9 @@
 
 
 
-```
-mkdir ProjectName
-cd ProjectName
-```
-
 Init project
 
+ProjectNameAPI will create a folder with the project name
 ```
 dotnet new webapi -n ProjectNameAPI --no-https
 ```
