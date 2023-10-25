@@ -38,6 +38,30 @@ AllGlasses - array, normally the plural of the ClassName
 
 To initalize a namespace use `namespace ProjectName.Topic;`, in other files that need to access that file or 'namespace' you can 'import' it with `using ProjectName.Topic;`
 
+## After Copying
+
+To test these, use Postman.
+
+First start up the server/api
+
+```c# 
+dotnet run
+```
+
+In Postman
+
+GET `localhost:1234/api/glasses`
+
+(copy and paste the example into the POST, remove the id)
+
+POST `localhost:1234/api/glasses`
+
+Double check the data type of the body, it should be JSON and in the headers tab, make sure `Content-Type` is set to `application/json`
+
+PUT `localhost:1234/api/glasses/4`
+include the id in the JSON body
+
+
 ## Model
 
 ```c#
