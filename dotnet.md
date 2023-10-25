@@ -53,6 +53,60 @@ public class Glasses
 }
 ```
 
+## Services
+
+```c#
+// GlassesServices.cs (Rootdir/Services)
+
+using SeeSharpGlasses.Models;
+
+namespace SeeSharpGlasses.Services;
+
+public static class GlassesService
+{
+    static List<Glasses> AllGlasses { get; }
+    static int nextId = 4;
+    static GlassesService()
+    {
+        AllGlasses = new List<Glasses>
+        {
+            new Glasses { Id = 1, Name = "Ray-Ban Clubmaster", Color = " Brown / Gold", Shape = "browline" },
+            new Glasses { Id = 2, Name = "Ottoto Bellona", Color = "Pink / Gold", Shape = "Oval" },
+            new Glasses { Id = 3, Name = "Oakley Socket 5.5", Color = "Gunmetal", Shape = "Rectangle"}
+        };
+    }
+
+    public static List<Glasses> GetAll() => AllGlasses;
+
+    public static Glasses? Get(int id) => AllGlasses.FirstOrDefault(p => p.Id == id);
+
+    public static void Add(Glasses glasses)
+    {
+        glasses.Id = nextId++;
+        AllGlasses.Add(glasses);
+    }
+
+    public static void Delete(int id)
+    {
+        var glasses = Get(id);
+        if (glasses is null)
+            return;
+
+        AllGlasses.Remove(glasses);
+    }
+
+    public static void Update(Glasses glasses)
+    {
+        var index = AllGlasses.FindIndex(p => p.Id == glasses.Id);
+        if (index == -1)
+            return;
+
+        AllGlasses[index] = glasses;
+    }
+}
+```
+
+
 ## Controller
 
 ```c#
@@ -132,55 +186,3 @@ public class GlassesController : ControllerBase
 
 ```
 
-## Services
-
-```c#
-// GlassesServices.cs (Rootdir/Services)
-
-using SeeSharpGlasses.Models;
-
-namespace SeeSharpGlasses.Services;
-
-public static class GlassesService
-{
-    static List<Glasses> AllGlasses { get; }
-    static int nextId = 4;
-    static GlassesService()
-    {
-        AllGlasses = new List<Glasses>
-        {
-            new Glasses { Id = 1, Name = "Ray-Ban Clubmaster", Color = " Brown / Gold", Shape = "browline" },
-            new Glasses { Id = 2, Name = "Ottoto Bellona", Color = "Pink / Gold", Shape = "Oval" },
-            new Glasses { Id = 3, Name = "Oakley Socket 5.5", Color = "Gunmetal", Shape = "Rectangle"}
-        };
-    }
-
-    public static List<Glasses> GetAll() => AllGlasses;
-
-    public static Glasses? Get(int id) => AllGlasses.FirstOrDefault(p => p.Id == id);
-
-    public static void Add(Glasses glasses)
-    {
-        glasses.Id = nextId++;
-        AllGlasses.Add(glasses);
-    }
-
-    public static void Delete(int id)
-    {
-        var glasses = Get(id);
-        if (glasses is null)
-            return;
-
-        AllGlasses.Remove(glasses);
-    }
-
-    public static void Update(Glasses glasses)
-    {
-        var index = AllGlasses.FindIndex(p => p.Id == glasses.Id);
-        if (index == -1)
-            return;
-
-        AllGlasses[index] = glasses;
-    }
-}
-```
