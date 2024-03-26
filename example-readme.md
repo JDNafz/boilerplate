@@ -30,7 +30,16 @@ Full Size Screen           |   Small Size Screen     |
 
 Link to software that is required to install the app (e.g. node).
  
+
 - [Node.js](https://nodejs.org/en/)
+- React
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Angular (16.2.12)](https://angular.io/guide/setup-local)
+- [Java - Springboot(3.2.3)](https://spring.io/blog/2024/02/22/spring-boot-3-2-3-available-now)
+- [Java JDK Corretto (17.0.10)](https://www.oracle.com/java/technologies/javase/17-0-10-relnotes.html)
+- IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)* Or and IDE of your choice
+
 - List other prerequisites here
 
 ## Installation
