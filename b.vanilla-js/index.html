@@ -10,38 +10,13 @@
   </head>
   <body>
     <h1>JavaScript DOM Manipulation Demo</h1>
-    <!-- Original divs with IDs -->
-    <div class="container">
-      <h2>Original Divs (click to change color)</h2>
-      <div id="box1" class="color-box" style="background-color: red">Box 1</div>
-      <div id="box2" class="color-box" style="background-color: blue">
-        Box 2
-      </div>
-      <div id="box3" class="color-box" style="background-color: green">
-        Box 3
-      </div>
-    </div>
 
     <!-- Controls -->
     <div class="container">
       <h2>Controls</h2>
       <div>
-        <label for="colorInput">Enter a color (name or hex): </label>
-        <input
-          type="text"
-          id="colorInput"
-          placeholder="red, #ff0000, etc."
-          value="purple"
-        />
-      </div>
-
-      <div>
-        <button onclick="changeRandomBoxColor()">
-          Change Random Box Color
-        </button>
-        <button onclick="createNewDiv()">Create New Div</button>
-        <button onclick="changeAllColors()">Change All Colors</button>
-        <button onclick="clearNewDivs()">Clear New Divs</button>
+        <button onclick="createNewDiv()">Add</button>
+        <button onclick="clearNewDivs()">Remove</button>
       </div>
     </div>
 
@@ -49,22 +24,6 @@
     <div class="container">
       <h2>Dynamically Created Divs</h2>
       <div id="new-divs-container"></div>
-    </div>
-
-    <!-- Display area for messages -->
-    <div class="container">
-      <h2>Messages</h2>
-      <div
-        id="messages"
-        style="
-          background-color: #f8f9fa;
-          padding: 10px;
-          border-radius: 4px;
-          min-height: 50px;
-        "
-      >
-        Click around to see JavaScript in action!
-      </div>
     </div>
   </body>
 </html>
