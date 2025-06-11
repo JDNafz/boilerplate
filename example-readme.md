@@ -9,13 +9,14 @@
 
 _Duration: 2 Week Sprint_
 
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
+Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it?  
 
-REMOVE THIS FOR EACH PROJECT
 
-[EXAMPLE README](https://github.com/blakesmithmn/weekend-sql-to-do-list)
-
-[MARKDOWN CHEAT SHEET](https://www.markdownguide.org/cheat-sheet/) 
+> REMOVE THIS FOR EACH PROJECT
+> 
+> [Completed Example of this Readme](https://github.com/blakesmithmn/weekend-sql-to-do-list/blob/main/README.md)
+>
+> [Markdown Doc Cheatsheet from GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#GitHub-flavored-markdown)
 
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https://www.heroku.com)
 
