@@ -1,6 +1,4 @@
-# How to connect to Neon 
-
-Add the following to your files (explanation of where to find this info below)
+# How to connect to Neon.db to Express
 
 ### *.gitignore* 
     .env
